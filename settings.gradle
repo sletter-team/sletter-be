@@ -1,1 +1,8 @@
 rootProject.name = 'sletter-be'
+
+include ':batch'
+include ':application'
+include ':domain'
+include ':infrastructure'
+include ':security'
+include ':web'
