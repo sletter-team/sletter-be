@@ -5,8 +5,9 @@ on:
     branches:
       - develop
       - main
-    path:
+    paths:
       - web/**
+      - .github/workflows/ci.yml
 jobs:
   ci:
     runs-on: ubuntu-latest
