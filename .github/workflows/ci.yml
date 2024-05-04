@@ -1,11 +1,12 @@
-name: CI triggered by PR
+name: CI triggered by PR in web module
 
 on:
   pull_request:
     branches:
       - develop
       - main
-
+    path:
+      - web/**
 jobs:
   ci:
     runs-on: ubuntu-latest
@@ -30,5 +31,6 @@ jobs:
             ${{ runner.os }}-gradle-
       - name: test
         run: |
+          cd web
           chmod +x gradlew 
           ./gradlew test
