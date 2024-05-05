@@ -46,7 +46,7 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SERVER_PRIVATE_KEY }}
           source: script/deploy-web.sh
-          target: /home/ubuntu/deploy-web.sh
+          target: /home/ubuntu
           strip_components: 1
 
       - name: Deploy to prod
